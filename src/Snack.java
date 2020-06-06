@@ -71,4 +71,18 @@ public class Snack {
         if (quantityToBuy <= 0) return 0;
         return quantityToBuy * cost;
     }
+
+    //overrides
+    @Override
+    public String toString(){
+        float totalOfAll = getTotalCost(quantity);
+        return String.format("%s Vending id: %s Quantity left: %d total cost of all: %.2f", name, vendingID, quantity, totalOfAll);
+        /*
+        Display each snack with
+Name
+Vending Machine Name
+Quantity on hand
+Total cost of all of the quantities of this snack on hand
+         */
+    }
 }

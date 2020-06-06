@@ -14,5 +14,25 @@ public class Customer {
         this.cashOnHand = cashOnHand;
     }
 
+    //setters/getters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public float getCashOnHand() {
+        return cashOnHand;
+    }
+
+    //public methods
+    public void addCash(float amountToAdd){
+        cashOnHand += amountToAdd;
+    }
+    public void buyItem(float purchaseTotal){
+        cashOnHand -= purchaseTotal;
+    }
 
 }
